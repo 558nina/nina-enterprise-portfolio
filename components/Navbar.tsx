@@ -1,12 +1,27 @@
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full bg-black/80 backdrop-blur-sm text-white p-4 z-50">
-      <div className="max-w-7xl mx-auto flex justify-between">
-        <span className="font-bold">Nina Hesse</span>
+    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 px-6 py-4 text-white backdrop-blur-sm">
+      <div className="mx-auto flex max-w-7xl items-center justify-between">
+        <a href="#" className="leading-tight">
+          <span className="block text-lg font-bold">Nina Hesse</span>
+          <span className="hidden text-xs text-slate-400 sm:block">
+            Agile Delivery & Transformation
+          </span>
+        </a>
 
-        <div className="flex gap-6">
-          <a href="#experience">Experience</a>
-          <a href="#technical">Technical</a>
+        <div className="flex gap-6 text-sm font-medium text-slate-300">
+          <a href="#experience" className="hover:text-cyan-300">
+            Experience
+          </a>
+          <a href="#technical" className="hover:text-cyan-300">
+            Technical
+          </a>
+          <a href="#services" className="hover:text-cyan-300">
+            Services
+          </a>
+          <a href="#contact" className="hover:text-cyan-300">
+            Contact
+          </a>
         </div>
       </div>
     </nav>

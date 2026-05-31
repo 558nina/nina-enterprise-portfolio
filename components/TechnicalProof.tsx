@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import VideoCard from "./VideoCard";
 
 const videos = [
@@ -51,7 +54,22 @@ const videos = [
   },
 ];
 
+const filters = [
+  "All",
+  "Cloud & DevOps",
+  "AWS",
+  "Cyber Security",
+  "Delivery Excellence",
+];
+
 export default function TechnicalProof() {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filteredVideos =
+    activeFilter === "All"
+      ? videos
+      : videos.filter((video) => video.category === activeFilter);
+
   return (
     <section id="technical" className="bg-[#0B0F1A] px-6 py-24 text-white">
       <div className="mx-auto max-w-7xl">
@@ -71,20 +89,23 @@ export default function TechnicalProof() {
         </div>
 
         <div className="mb-10 flex flex-wrap justify-center gap-3">
-          {["Cloud & DevOps", "AWS", "Cyber Security", "Delivery Excellence"].map(
-            (item) => (
-              <span
-                key={item}
-                className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-sm text-cyan-200"
-              >
-                {item}
-              </span>
-            )
-          )}
+          {filters.map((item) => (
+            <button
+              key={item}
+              onClick={() => setActiveFilter(item)}
+              className={`rounded-full border px-4 py-2 text-sm transition ${
+                activeFilter === item
+                  ? "border-cyan-300 bg-cyan-400 text-slate-950"
+                  : "border-cyan-400/20 bg-cyan-400/5 text-cyan-200 hover:border-cyan-300/50"
+              }`}
+            >
+              {item}
+            </button>
+          ))}
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {videos.map((video) => (
+          {filteredVideos.map((video) => (
             <VideoCard key={video.title} {...video} />
           ))}
         </div>
