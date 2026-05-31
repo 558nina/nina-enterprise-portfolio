@@ -12,15 +12,15 @@ export default function TrustMetrics() {
   const metrics = [
     {
       value: "25%",
-      label: "Delivery throughput improvement",
+      label: "Delivery Throughput Increase",
     },
     {
       value: "30%",
-      label: "Operational cost reduction",
+      label: "Cloud Cost Reduction",
     },
     {
       value: "95%",
-      label: "Stakeholder satisfaction",
+      label: "Stakeholder Satisfaction",
     },
   ];
 
@@ -34,10 +34,7 @@ export default function TrustMetrics() {
 
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm font-semibold text-slate-300">
             {organisations.map((organisation) => (
-              <span
-                key={organisation}
-                className="transition hover:text-cyan-300"
-              >
+              <span key={organisation} className="transition hover:text-cyan-300">
                 {organisation}
               </span>
             ))}
@@ -48,11 +45,9 @@ export default function TrustMetrics() {
           {metrics.map((metric) => (
             <div
               key={metric.label}
-              className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 text-center"
+              className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 text-center transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]"
             >
-              <p className="text-5xl font-bold text-cyan-300">
-                {metric.value}
-              </p>
+              <p className="text-5xl font-bold text-cyan-300">{metric.value}</p>
 
               <p className="mt-3 text-sm font-medium text-slate-300">
                 {metric.label}
