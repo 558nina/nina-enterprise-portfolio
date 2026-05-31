@@ -4,6 +4,24 @@ import { motion } from "framer-motion";
 import BackgroundGrid from "./BackgroundGrid";
 
 export default function Hero() {
+  const expertise = [
+    "Agile Transformation",
+    "Enterprise Delivery Leadership",
+    "Cloud & DevOps Programmes",
+    "Delivery Governance",
+    "Stakeholder Management",
+    "Coaching & Mentoring",
+  ];
+
+  const industries = [
+    "Financial Services",
+    "Healthcare",
+    "Retail",
+    "Aviation",
+  ];
+
+  const engagements = ["LSEG", "Legal & General", "Capgemini"];
+
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#0B0F1A] px-6 pt-28 text-white">
       <BackgroundGrid />
@@ -33,16 +51,14 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3 text-sm">
-            {["London Stock Exchange Group", "Legal & General", "Capgemini"].map(
-              (company) => (
-                <span
-                  key={company}
-                  className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-cyan-200"
-                >
-                  {company}
-                </span>
-              )
-            )}
+            {engagements.map((company) => (
+              <span
+                key={company}
+                className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-cyan-200"
+              >
+                {company}
+              </span>
+            ))}
           </div>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -77,14 +93,14 @@ export default function Hero() {
         >
           <div className="absolute -inset-8 rounded-[2rem] bg-cyan-400/10 blur-3xl" />
 
-          <div className="relative rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl backdrop-blur-xl">
-            <div className="mb-6 flex items-center justify-between border-b border-white/10 pb-5">
+          <div className="relative rounded-[2rem] border border-white/10 bg-white/[0.06] p-7 shadow-2xl backdrop-blur-xl">
+            <div className="mb-7 flex items-start justify-between gap-6 border-b border-white/10 pb-6">
               <div>
                 <p className="text-sm text-slate-400">
                   Enterprise Transformation
                 </p>
-                <p className="text-xl font-semibold">
-                  Delivery Leadership Expertise
+                <p className="mt-1 text-2xl font-semibold">
+                  Transformation Specialist
                 </p>
               </div>
 
@@ -93,31 +109,66 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
-              {[
-                "8+ Years Experience",
-                "Agile Delivery",
-                "Cloud Transformation",
-                "DevOps & Governance",
-                "Scrum Master II",
-                "SAFe Certified",
-                "AWS Cloud Practitioner",
-                "Programme Delivery",
-              ].map((item) => (
+            <div className="space-y-3">
+              {expertise.map((item) => (
                 <div
                   key={item}
-                  className="rounded-2xl border border-white/10 bg-slate-950/50 p-4 transition-all duration-300 hover:border-cyan-400/20 hover:bg-slate-900/70"
+                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-slate-950/45 px-4 py-3"
                 >
-                  <p className="text-sm font-medium text-slate-200">{item}</p>
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan-400/10 text-sm text-cyan-300">
+                    ✓
+                  </span>
+                  <span className="text-sm font-medium text-slate-200">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
 
-            <div className="mt-6 rounded-2xl border border-cyan-300/20 bg-cyan-300/10 p-5">
-              <p className="text-sm font-medium text-cyan-200">Focus Areas</p>
+            <div className="mt-7 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-2xl border border-cyan-300/20 bg-cyan-300/10 p-5">
+                <p className="text-sm font-semibold text-cyan-200">
+                  Industries
+                </p>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {industries.map((industry) => (
+                    <span
+                      key={industry}
+                      className="rounded-full border border-white/10 bg-slate-950/40 px-3 py-1 text-xs text-slate-300"
+                    >
+                      {industry}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-5">
+                <p className="text-sm font-semibold text-cyan-200">
+                  Recent Engagements
+                </p>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {engagements.map((engagement) => (
+                    <span
+                      key={engagement}
+                      className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-3 py-1 text-xs text-cyan-200"
+                    >
+                      {engagement}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-7 rounded-2xl border border-white/10 bg-slate-950/40 p-5">
+              <p className="text-sm font-semibold text-cyan-200">
+                Positioning
+              </p>
               <p className="mt-2 text-sm leading-6 text-slate-300">
-                Agile transformation, delivery governance, DevOps delivery,
-                cloud migration, stakeholder alignment and enterprise coaching.
+                Bridging business strategy, Agile delivery, technical
+                transformation and governance across complex enterprise
+                environments.
               </p>
             </div>
           </div>
