@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import LogoTrustBar from "@/components/LogoTrustBar";
+import LogoMarquee from "@/components/LogoMarquee";
 import TrustMetrics from "@/components/TrustMetrics";
 import CareerTimeline from "@/components/CareerTimeline";
 import AIInnovation from "@/components/AIInnovation";
@@ -17,7 +17,7 @@ export default function Home() {
 
       <Hero />
 
-      <LogoTrustBar />
+      <LogoMarquee />
 
       <TrustMetrics />
 
