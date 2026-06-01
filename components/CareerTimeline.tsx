@@ -4,46 +4,50 @@ const journey = [
   {
     year: "2024",
     company: "London Stock Exchange Group",
-    short: "LSEG",
+    badge: "LSEG",
     role: "Scrum Master / Agile Delivery Lead",
     focus: "DevOps Programme",
     achievement:
       "Improved delivery predictability through governance, forecasting and delivery metrics.",
     metrics: ["Delivery Predictability", "Stakeholder Confidence"],
     tags: ["DevOps", "Governance", "Forecasting", "CI/CD"],
+    clients: [],
   },
   {
     year: "2022",
     company: "Legal & General",
-    short: "L&G",
+    badge: "L&G",
     role: "Digital Scrum Master",
     focus: "Technology Accreditation",
     achievement:
       "Accelerated delivery throughput by 25% through improved planning, facilitation and execution discipline.",
     metrics: ["25% Throughput Increase", "Agile Maturity"],
     tags: ["Agile", "Planning", "Forecasting", "Transformation"],
+    clients: [],
   },
   {
     year: "2020",
     company: "Capgemini",
-    short: "CAP",
+    badge: "CAP",
     role: "Engagement Manager",
     focus: "Cloud & Infrastructure Services",
     achievement:
-      "Led cloud migration, IAM and DevSecOps transformation engagements across Royal Mail, Bupa, easyJet and Barclays.",
-    metrics: ["30% Cost Reduction", "25% Lead Time Reduction"],
+      "Led cloud migration, IAM and DevSecOps transformation engagements across multiple enterprise clients.",
+    metrics: ["30% Cost Reduction", "25% Lead Time Reduction", "15% Defect Reduction"],
     tags: ["Cloud", "IAM", "DevSecOps", "Consulting"],
+    clients: ["Royal Mail", "Bupa", "easyJet", "Barclays"],
   },
   {
     year: "2018",
     company: "Marks & Spencer",
-    short: "M&S",
+    badge: "M&S",
     role: "Project Manager",
     focus: "ServiceNow Transformation",
     achievement:
       "Delivered ServiceNow transformation on time and within budget while achieving 95% stakeholder satisfaction.",
-    metrics: ["95% Satisfaction", "On-Time Delivery"],
+    metrics: ["95% Satisfaction", "On-Time Delivery", "Within Budget"],
     tags: ["ServiceNow", "PMO", "Governance", "Delivery"],
+    clients: [],
   },
 ];
 
@@ -73,13 +77,13 @@ export default function CareerTimeline() {
         </div>
 
         <div className="relative mx-auto max-w-5xl">
-          <div className="absolute left-6 top-0 hidden h-full w-px bg-gradient-to-b from-cyan-300/0 via-cyan-300/50 to-cyan-300/0 md:block" />
+          <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-cyan-300/0 via-cyan-300/50 to-cyan-300/0 md:block" />
 
           <div className="space-y-10">
             {journey.map((item) => (
-              <div key={item.company} className="relative md:pl-20">
-                <div className="absolute left-0 top-8 hidden h-12 w-12 items-center justify-center rounded-full border border-cyan-400/30 bg-[#0B0F1A] text-xs font-bold text-cyan-300 shadow-[0_0_30px_rgba(34,211,238,0.18)] md:flex">
-                  {item.short}
+              <div key={item.company} className="relative md:pl-24">
+                <div className="absolute left-0 top-8 hidden h-16 w-16 items-center justify-center rounded-2xl border border-cyan-400/30 bg-[#0B0F1A] text-sm font-bold tracking-wider text-cyan-300 shadow-[0_0_30px_rgba(34,211,238,0.18)] md:flex">
+                  {item.badge}
                 </div>
 
                 <div className="group rounded-[2rem] border border-white/10 bg-white/[0.035] p-7 transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-white/[0.05] hover:shadow-[0_0_50px_rgba(34,211,238,0.08)]">
@@ -115,6 +119,25 @@ export default function CareerTimeline() {
                       ))}
                     </div>
                   </div>
+
+                  {item.clients.length > 0 && (
+                    <div className="mt-6 rounded-2xl border border-white/10 bg-slate-950/35 p-5">
+                      <p className="text-sm font-semibold text-cyan-200">
+                        Client Engagements
+                      </p>
+
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {item.clients.map((client) => (
+                          <span
+                            key={client}
+                            className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-3 py-1 text-xs text-cyan-200"
+                          >
+                            {client}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                   <div className="mt-7 grid gap-5 lg:grid-cols-[1.4fr_0.8fr]">
                     <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-5">
