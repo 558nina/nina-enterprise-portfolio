@@ -46,7 +46,7 @@ export default function Hero() {
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
             I help organisations improve delivery performance, scale Agile ways
-            of working, and modernise technology delivery across complex
+            of working and modernise technology delivery across complex
             enterprise environments.
           </p>
 
@@ -77,11 +77,24 @@ export default function Hero() {
             </a>
 
             <a
-              href="#contact"
-              className="text-sm font-semibold text-slate-300 transition hover:text-white"
+              href="/Nina-Hesse-CV.docx"
+              download
+              className="rounded-full border border-cyan-400/30 px-7 py-3 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-950"
             >
-              Book Coaching →
+              Download CV
             </a>
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+            <p className="text-sm font-semibold text-cyan-300">
+              Available for
+            </p>
+
+            <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-300">
+              <span>✓ Contract Engagements</span>
+              <span>✓ Transformation Programmes</span>
+              <span>✓ Coaching & Mentoring</span>
+            </div>
           </div>
         </motion.div>
 
@@ -99,6 +112,7 @@ export default function Hero() {
                 <p className="text-sm text-slate-400">
                   Enterprise Transformation
                 </p>
+
                 <p className="mt-1 text-2xl font-semibold">
                   Transformation Specialist
                 </p>
@@ -118,6 +132,7 @@ export default function Hero() {
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan-400/10 text-sm text-cyan-300">
                     ✓
                   </span>
+
                   <span className="text-sm font-medium text-slate-200">
                     {item}
                   </span>
@@ -165,6 +180,7 @@ export default function Hero() {
               <p className="text-sm font-semibold text-cyan-200">
                 Positioning
               </p>
+
               <p className="mt-2 text-sm leading-6 text-slate-300">
                 Bridging business strategy, Agile delivery, technical
                 transformation and governance across complex enterprise

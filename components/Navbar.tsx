@@ -9,7 +9,7 @@ export default function Navbar() {
           </span>
         </a>
 
-        <div className="flex gap-6 text-sm font-medium text-slate-300">
+        <div className="flex items-center gap-6 text-sm font-medium text-slate-300">
           <a href="#experience" className="hover:text-cyan-300">
             Experience
           </a>
@@ -21,6 +21,19 @@ export default function Navbar() {
           </a>
           <a href="#contact" className="hover:text-cyan-300">
             Contact
+          </a>
+          <a href="#" className="hover:text-cyan-300">
+            LinkedIn
+          </a>
+          <a href="https://github.com/558nina" className="hover:text-cyan-300">
+            GitHub
+          </a>
+          <a
+            href="/Nina-Hesse-CV.docx"
+            download
+            className="rounded-full bg-cyan-400 px-4 py-2 text-slate-950 hover:bg-cyan-300"
+          >
+            Download CV
           </a>
         </div>
       </div>
