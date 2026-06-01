@@ -1,3 +1,5 @@
+import PremiumCard from "./PremiumCard";
+
 export default function AIInnovation() {
   const capabilities = [
     "Agentic Workflow Design",
@@ -64,7 +66,7 @@ export default function AIInnovation() {
           ))}
         </div>
 
-        <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-2xl md:p-8">
+        <PremiumCard className="p-6 shadow-2xl md:p-8">
           <div className="mb-8 flex flex-col gap-4 border-b border-white/10 pb-6 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="text-sm text-slate-400">Concept Workflow</p>
@@ -102,13 +104,14 @@ export default function AIInnovation() {
             <p className="text-sm font-semibold uppercase tracking-wider text-cyan-300">
               Delivery Principle
             </p>
+
             <p className="mt-3 leading-7 text-slate-300">
               AI can accelerate delivery insight, reporting and risk visibility,
               but accountability, approval and decision-making remain with the
               delivery leader.
             </p>
           </div>
-        </div>
+        </PremiumCard>
       </div>
     </section>
   );

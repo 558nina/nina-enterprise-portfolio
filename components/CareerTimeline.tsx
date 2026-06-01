@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import PremiumCard from "./PremiumCard";
 
 const journey = [
   {
@@ -57,7 +58,11 @@ const journey = [
     ],
     outcome:
       "Delivered measurable improvements across cost optimisation, delivery lead times and release quality.",
-    metrics: ["30% Cost Reduction", "25% Lead Time Reduction", "15% Defect Reduction"],
+    metrics: [
+      "30% Cost Reduction",
+      "25% Lead Time Reduction",
+      "15% Defect Reduction",
+    ],
     tags: ["Cloud", "IAM", "DevSecOps", "Consulting"],
   },
   {
@@ -167,7 +172,7 @@ export default function CareerTimeline() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-7 shadow-2xl">
+          <PremiumCard className="p-7 shadow-2xl">
             <div className="flex flex-col gap-5 border-b border-white/10 pb-6 lg:flex-row lg:items-start lg:justify-between">
               <div>
                 <div className="flex flex-wrap items-center gap-3">
@@ -265,7 +270,7 @@ export default function CareerTimeline() {
                 </div>
               </div>
             </div>
-          </div>
+          </PremiumCard>
         </div>
       </div>
     </section>

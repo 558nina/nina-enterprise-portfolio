@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import BackgroundGrid from "./BackgroundGrid";
+import PremiumCard from "./PremiumCard";
 
 export default function Hero() {
   const expertise = [
@@ -15,12 +16,7 @@ export default function Hero() {
     "Coaching & Mentoring",
   ];
 
-  const industries = [
-    "Financial Services",
-    "Healthcare",
-    "Retail",
-    "Aviation",
-  ];
+  const industries = ["Financial Services", "Healthcare", "Retail", "Aviation"];
 
   const engagements = ["LSEG", "Legal & General", "Capgemini"];
 
@@ -109,7 +105,7 @@ export default function Hero() {
         >
           <div className="absolute -inset-8 rounded-[2rem] bg-cyan-400/10 blur-3xl" />
 
-          <div className="relative rounded-[2rem] border border-white/10 bg-white/[0.06] p-7 shadow-2xl backdrop-blur-xl">
+          <PremiumCard className="p-7 shadow-2xl">
             <div className="mb-7 flex items-start justify-between gap-6 border-b border-white/10 pb-6">
               <div>
                 <p className="text-sm text-slate-400">
@@ -190,7 +186,7 @@ export default function Hero() {
                 enterprise environments.
               </p>
             </div>
-          </div>
+          </PremiumCard>
         </motion.div>
       </div>
     </section>
