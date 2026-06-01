@@ -9,6 +9,8 @@ export default function Hero() {
     "Enterprise Delivery Leadership",
     "Cloud & DevOps Programmes",
     "Delivery Governance",
+    "AI-Assisted Delivery",
+    "Agentic Workflow Design",
     "Stakeholder Management",
     "Coaching & Mentoring",
   ];
@@ -33,7 +35,7 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
         >
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-cyan-300">
-            Agile Delivery · Transformation · Governance
+            Agile Delivery · Transformation · AI Enablement
           </p>
 
           <h1 className="max-w-3xl text-5xl font-bold tracking-tight md:text-7xl">
@@ -46,8 +48,8 @@ export default function Hero() {
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
             I help organisations improve delivery performance, scale Agile ways
-            of working and modernise technology delivery across complex
-            enterprise environments.
+            of working, adopt AI responsibly and modernise technology delivery
+            across complex enterprise environments.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3 text-sm">
@@ -93,6 +95,7 @@ export default function Hero() {
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-300">
               <span>✓ Contract Engagements</span>
               <span>✓ Transformation Programmes</span>
+              <span>✓ AI Adoption Initiatives</span>
               <span>✓ Coaching & Mentoring</span>
             </div>
           </div>
@@ -182,9 +185,9 @@ export default function Hero() {
               </p>
 
               <p className="mt-2 text-sm leading-6 text-slate-300">
-                Bridging business strategy, Agile delivery, technical
-                transformation and governance across complex enterprise
-                environments.
+                Bridging business strategy, Agile delivery, AI adoption,
+                technical transformation and governance across complex
+                enterprise environments.
               </p>
             </div>
           </div>

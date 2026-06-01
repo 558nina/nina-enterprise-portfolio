@@ -52,6 +52,49 @@ const videos = [
     description:
       "A practical explanation of velocity, throughput, forecasting and stakeholder reporting for Agile delivery teams.",
   },
+
+  // AI & Agentic Delivery
+
+  {
+    category: "AI & Agentic Delivery",
+    title: "How Agentic AI Supports Project Delivery",
+    duration: "8 mins",
+    level: "Beginner",
+    description:
+      "Understand how AI agents can support RAID management, stakeholder reporting, backlog refinement, sprint planning and project governance.",
+  },
+  {
+    category: "AI & Agentic Delivery",
+    title: "AI Governance for Agile Teams",
+    duration: "10 mins",
+    level: "Intermediate",
+    description:
+      "Learn how to introduce AI safely through governance, human approval, auditability, security controls and responsible delivery practices.",
+  },
+  {
+    category: "AI & Agentic Delivery",
+    title: "Building an AI Delivery Assistant",
+    duration: "12 mins",
+    level: "Intermediate",
+    description:
+      "A practical walkthrough showing how an AI assistant can analyse project updates, identify delivery risks, generate RAID items and create executive summaries.",
+  },
+  {
+    category: "AI & Agentic Delivery",
+    title: "AI for Scrum Masters and Delivery Leads",
+    duration: "9 mins",
+    level: "Beginner",
+    description:
+      "Explore practical ways AI can support stand-ups, retrospectives, backlog refinement, stakeholder reporting and delivery forecasting.",
+  },
+  {
+    category: "AI & Agentic Delivery",
+    title: "Introducing AI into Enterprise Programmes",
+    duration: "15 mins",
+    level: "Advanced",
+    description:
+      "A delivery-focused framework for adopting AI responsibly through governance, operating models, risk management and change leadership.",
+  },
 ];
 
 const filters = [
@@ -60,6 +103,7 @@ const filters = [
   "AWS",
   "Cyber Security",
   "Delivery Excellence",
+  "AI & Agentic Delivery",
 ];
 
 export default function TechnicalProof() {
@@ -83,8 +127,9 @@ export default function TechnicalProof() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-400">
-            Practical demonstrations of cloud, DevOps, cyber security and Agile
-            delivery concepts that support successful enterprise transformation.
+            Practical demonstrations of cloud, DevOps, cyber security, AI
+            adoption and Agile delivery concepts that support successful
+            enterprise transformation.
           </p>
         </div>
 
