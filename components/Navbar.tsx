@@ -32,7 +32,7 @@ export default function Navbar() {
           ))}
 
           <a
-            href="/Nina-Hesse-CV.docx"
+            href="/Nina-Hesse-CV.pdf"
             download
             className="rounded-full bg-cyan-400 px-4 py-2 text-slate-950 hover:bg-cyan-300"
           >

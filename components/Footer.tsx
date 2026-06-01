@@ -28,7 +28,7 @@ export default function Footer() {
           <a href="mailto:hesse.nina@yahoo.co.uk" className="hover:text-cyan-300">
             Email
           </a>
-          <a href="/Nina-Hesse-CV.docx" download className="hover:text-cyan-300">
+          <a href="/Nina-Hesse-CV.pdf" download className="hover:text-cyan-300">
             Download CV
           </a>
         </div>

@@ -79,7 +79,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/Nina-Hesse-CV.docx"
+              href="/Nina-Hesse-CV.pdf"
               download
               className="rounded-full border border-cyan-400/30 px-7 py-3 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-950"
             >
