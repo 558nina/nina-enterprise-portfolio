@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import LogoTrustBar from "@/components/LogoTrustBar";
 import TrustMetrics from "@/components/TrustMetrics";
 import CareerTimeline from "@/components/CareerTimeline";
 import AIInnovation from "@/components/AIInnovation";
@@ -13,14 +14,25 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0B0F1A] text-white">
       <Navbar />
+
       <Hero />
+
+      <LogoTrustBar />
+
       <TrustMetrics />
+
       <CareerTimeline />
+
       <AIInnovation />
+
       <TechnicalProof />
+
       <Services />
+
       <ResourcesPreview />
+
       <Contact />
+
       <Footer />
     </main>
   );
