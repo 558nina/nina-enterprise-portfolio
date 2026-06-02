@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import BackgroundGrid from "./BackgroundGrid";
 import PremiumCard from "./PremiumCard";
@@ -9,7 +10,7 @@ export default function Hero() {
 
   const badges = [
     "Agile Transformation",
-    "AI Adoption",
+    "AI Governance",
     "Delivery Leadership",
     "Enterprise Governance",
   ];
@@ -19,26 +20,31 @@ export default function Hero() {
       <BackgroundGrid />
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
+        {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-cyan-300">
-            Agile Delivery · Transformation · AI Enablement
+            Transformation Leadership · Agile Delivery · AI Governance
           </p>
 
-          <h1 className="max-w-3xl text-5xl font-bold tracking-tight md:text-7xl">
-            Hi, I&apos;m Nina Hesse
+          <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
+            Transforming Delivery.
+            <br />
+            Accelerating Change.
+            <br />
+            Enabling AI.
           </h1>
 
-          <h2 className="mt-5 text-2xl font-semibold text-cyan-300 md:text-3xl">
-            Agile Delivery Lead | Transformation Consultant
+          <h2 className="mt-6 text-2xl font-semibold text-cyan-300 md:text-3xl">
+            Nina Hesse | Transformation Consultant & Agile Delivery Lead
           </h2>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
             I help organisations improve delivery performance, scale Agile ways
-            of working, adopt AI responsibly and modernise technology delivery
+            of working, establish effective governance and adopt AI responsibly
             across complex enterprise environments.
           </p>
 
@@ -91,6 +97,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
+        {/* RIGHT SIDE */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -103,13 +110,15 @@ export default function Hero() {
             <div className="relative flex min-h-[520px] flex-col items-center justify-center overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-950/40 p-8">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.16),transparent_55%)]" />
 
-              <div className="relative flex h-64 w-64 items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-400/10 shadow-[0_0_80px_rgba(34,211,238,0.18)]">
-                <div className="absolute inset-6 rounded-full border border-white/10" />
-                <div className="absolute inset-12 rounded-full border border-cyan-300/20" />
-
-                <span className="text-7xl font-bold tracking-tight text-white">
-                  NH
-                </span>
+              {/* HEADSHOT */}
+              <div className="relative h-80 w-80 overflow-hidden rounded-full border border-cyan-300/30 shadow-[0_0_80px_rgba(34,211,238,0.18)]">
+                <Image
+                  src="/images/nina-headshot.png"
+                  alt="Nina Hesse"
+                  fill
+                  priority
+                  className="object-cover"
+                />
               </div>
 
               <div className="relative mt-8 text-center">
@@ -122,9 +131,9 @@ export default function Hero() {
                 </h3>
 
                 <p className="mx-auto mt-4 max-w-md text-sm leading-6 text-slate-400">
-                  Bridging Agile delivery, AI adoption, technical
-                  transformation and governance across complex enterprise
-                  environments.
+                  Bridging Agile delivery, AI governance, enterprise
+                  transformation and strategic execution across complex
+                  organisations.
                 </p>
               </div>
 
@@ -144,6 +153,7 @@ export default function Hero() {
                   <p className="text-sm font-semibold text-cyan-200">
                     Availability
                   </p>
+
                   <p className="mt-1 text-sm text-slate-400">
                     Open to contract, consulting and coaching opportunities.
                   </p>
