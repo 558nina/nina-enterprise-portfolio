@@ -13,7 +13,7 @@ export default function ResourcesPreview() {
       category: "Governance & Delivery",
       description:
         "PMO-ready RAID management and governance dashboard with automated Programme Health calculations, Governance Exposure scoring, executive reporting and stakeholder controls.",
-      link: "/resources/enterprise-raid-governance-dashboard-v1.0.xlsx",
+     link: "/downloads/enterprise-raid-governance-dashboard-v1.0.xlsx",
       status: "Available",
     },
     {
@@ -21,7 +21,7 @@ export default function ResourcesPreview() {
       category: "Governance & Delivery",
       description:
         "Executive reporting pack featuring delivery dashboards, RAID reporting, sponsor updates, governance health indicators and a Plan-on-a-Page roadmap.",
-      link: "/resources/Programme-Status-Report-Executive-Governance-Pack-v1.0.pptx",
+      link: "/downloads/programme-status-report-executive-governance-pack-v1.0.pptx",
       status: "Available",
     },
     {
