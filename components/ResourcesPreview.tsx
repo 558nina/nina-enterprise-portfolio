@@ -13,7 +13,7 @@ export default function ResourcesPreview() {
       category: "Governance & Delivery",
       description:
         "PMO-ready RAID management and governance dashboard with automated Programme Health calculations, Governance Exposure scoring, executive reporting and stakeholder controls.",
-      link: "/resources/Enterprise-RAID-Governance-Dashboard-v1.0.xlsx",
+      link: "/resources/enterprise-raid-governance-dashboard-v1.0.xlsx",
       status: "Available",
     },
     {
