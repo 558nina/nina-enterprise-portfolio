@@ -1,13 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import LogoMarquee from "@/components/LogoMarquee";
-import GovernanceSuite from "@/components/GovernanceSuite";
-import LearningHub from "@/components/LearningHub";
-import TrustMetrics from "@/components/TrustMetrics";
-import CareerTimeline from "@/components/CareerTimeline";
-import AIInnovation from "@/components/AIInnovation";
-import TechnicalProof from "@/components/TechnicalProof";
 import Services from "@/components/Services";
+import GovernanceSuite from "@/components/GovernanceSuite";
+import CareerTimeline from "@/components/CareerTimeline";
+import LearningHub from "@/components/LearningHub";
 import ResourcesPreview from "@/components/ResourcesPreview";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -21,19 +18,13 @@ export default function Home() {
 
       <LogoMarquee />
 
+      <Services />
+
       <GovernanceSuite />
-
-      <LearningHub />
-
-      <TrustMetrics />
 
       <CareerTimeline />
 
-      <AIInnovation />
-
-      <TechnicalProof />
-
-      <Services />
+      <LearningHub />
 
       <ResourcesPreview />
 

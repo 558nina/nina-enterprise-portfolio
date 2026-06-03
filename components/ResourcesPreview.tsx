@@ -10,24 +10,6 @@ type Resource = {
 export default function ResourcesPreview() {
   const resources: Resource[] = [
     {
-      title: "Steering Committee Reporting Pack™ v1.0",
-      category: "Governance & PMO",
-      description:
-        "A premium executive governance reporting framework designed for Programme Directors, PMOs and Transformation Leaders. Includes executive dashboards, governance reporting, financial oversight, programme roadmaps and decision tracking.",
-      link: "/downloads/Steering-Committee-Reporting-Pack-v1.0.pptx",
-      preview: "/images/steering-committee-reporting-pack-preview.png",
-      status: "Available",
-    },
-    {
-      title: "Enterprise RAID Log & Governance Dashboard",
-      category: "Governance & Delivery",
-      description:
-        "PMO-ready RAID management and governance dashboard with automated Programme Health calculations, Governance Exposure scoring, executive reporting and stakeholder controls.",
-      link: "/downloads/enterprise-raid-governance-dashboard-v1.0.xlsx",
-      preview: "/images/enterprise-raid-dashboard-preview.png",
-      status: "Available",
-    },
-    {
       title: "AI Governance Pack",
       category: "AI & Delivery",
       description:
@@ -62,11 +44,11 @@ export default function ResourcesPreview() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-cyan-300">
-            Resources & Templates
+            Free Resources & Templates
           </p>
 
           <h2 className="text-4xl font-bold md:text-5xl">
-            Tools, Frameworks & Delivery Assets
+            Practical Delivery Assets Coming Soon
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-400">
@@ -76,62 +58,34 @@ export default function ResourcesPreview() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {resources.map((resource) => (
             <div
               key={resource.title}
-              className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-white/[0.06] hover:shadow-[0_0_50px_rgba(34,211,238,0.08)]"
+              className="group rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-white/[0.06] hover:shadow-[0_0_50px_rgba(34,211,238,0.08)]"
             >
-              {resource.preview ? (
-                <div className="border-b border-white/10 bg-slate-950/60 p-4">
-                  <img
-                    src={resource.preview}
-                    alt={`${resource.title} preview`}
-                    className="h-44 w-full rounded-2xl object-cover object-top"
-                  />
-                </div>
-              ) : null}
+              <div className="mb-4 flex flex-wrap items-center gap-3">
+                <span className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-3 py-1 text-xs font-medium text-cyan-200">
+                  {resource.category}
+                </span>
 
-              <div className="p-8">
-                <div className="mb-4 flex flex-wrap items-center gap-3">
-                  <span className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-3 py-1 text-xs font-medium text-cyan-200">
-                    {resource.category}
-                  </span>
+                <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-slate-400">
+                  {resource.status}
+                </span>
+              </div>
 
-                  <span
-                    className={`rounded-full border px-3 py-1 text-xs font-medium ${
-                      resource.status === "Available"
-                        ? "border-emerald-400/20 bg-emerald-400/10 text-emerald-300"
-                        : "border-white/10 bg-white/[0.03] text-slate-400"
-                    }`}
-                  >
-                    {resource.status}
-                  </span>
-                </div>
+              <h3 className="text-xl font-bold text-white">
+                {resource.title}
+              </h3>
 
-                <h3 className="text-xl font-bold text-white">
-                  {resource.title}
-                </h3>
+              <p className="mt-4 leading-7 text-slate-400">
+                {resource.description}
+              </p>
 
-                <p className="mt-4 leading-7 text-slate-400">
-                  {resource.description}
-                </p>
-
-                <div className="mt-8 border-t border-white/10 pt-6">
-                  {resource.status === "Available" && resource.link ? (
-                    <a
-                      href={resource.link}
-                      download
-                      className="inline-flex rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
-                    >
-                      Download Pack
-                    </a>
-                  ) : (
-                    <span className="text-sm font-semibold text-cyan-300">
-                      Coming Soon →
-                    </span>
-                  )}
-                </div>
+              <div className="mt-8 border-t border-white/10 pt-6">
+                <span className="text-sm font-semibold text-cyan-300">
+                  Coming Soon →
+                </span>
               </div>
             </div>
           ))}
