@@ -20,7 +20,7 @@ export default function Hero() {
             alt="Nina Hesse"
             fill
             priority
-            className="object-cover object-center opacity-65"
+            className="object-cover object-top opacity-65"
           />
 
           <div className="absolute inset-0 bg-gradient-to-r from-[#07111F] via-[#07111F]/50 to-[#07111F]/10" />
@@ -38,7 +38,7 @@ export default function Hero() {
               Transformation Leadership · Agile Delivery · AI Governance
             </p>
 
-            <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
+            <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">
               Transforming Delivery.
               <br />
               Accelerating Change.
@@ -63,7 +63,7 @@ export default function Hero() {
 
             <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4">
               <div>
-                <p className="text-3xl font-bold text-cyan-300">20+</p>
+                <p className="text-3xl font-bold text-cyan-300">10+</p>
                 <p className="text-sm text-slate-400">Years Experience</p>
               </div>
 
