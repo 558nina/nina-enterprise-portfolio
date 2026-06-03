@@ -35,8 +35,13 @@ export default function LogoMarquee() {
   const repeatedLogos = [...logos, ...logos];
 
   return (
-    <section className="overflow-hidden border-y border-white/10 bg-[#070B14] py-6 text-white">
+    <section className="overflow-hidden border-y border-white/10 bg-[#070B14] py-8 text-white">
       <div className="mx-auto max-w-7xl">
+        <p className="mb-8 text-center text-lg text-slate-400">
+          Transformation, cloud and Agile delivery experience across leading
+          organisations
+        </p>
+
         <div className="relative">
           <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-[#070B14] to-transparent" />
 
