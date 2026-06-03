@@ -37,10 +37,6 @@ export default function LogoMarquee() {
   return (
     <section className="overflow-hidden border-y border-white/10 bg-[#070B14] py-6 text-white">
       <div className="mx-auto max-w-7xl">
-        <p className="mb-6 text-center text-xs uppercase tracking-[0.35em] text-slate-500">
-          Experience delivering transformation across leading global organisations
-        </p>
-
         <div className="relative">
           <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-[#070B14] to-transparent" />
 
