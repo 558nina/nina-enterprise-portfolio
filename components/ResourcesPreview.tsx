@@ -9,19 +9,19 @@ type Resource = {
 export default function ResourcesPreview() {
   const resources: Resource[] = [
     {
+      title: "Steering Committee Reporting Pack™ v1.0",
+      category: "Governance & PMO",
+      description:
+        "A premium executive governance reporting framework designed for Programme Directors, PMOs and Transformation Leaders. Includes executive dashboards, governance reporting, financial oversight, programme roadmaps and decision tracking.",
+      link: "/downloads/Steering-Committee-Reporting-Pack-v1.0.pptx",
+      status: "Available",
+    },
+    {
       title: "Enterprise RAID Log & Governance Dashboard",
       category: "Governance & Delivery",
       description:
         "PMO-ready RAID management and governance dashboard with automated Programme Health calculations, Governance Exposure scoring, executive reporting and stakeholder controls.",
-     link: "/downloads/enterprise-raid-governance-dashboard-v1.0.xlsx",
-      status: "Available",
-    },
-    {
-      title: "Programme Status Report & Executive Governance Pack",
-      category: "Governance & Delivery",
-      description:
-        "Executive reporting pack featuring delivery dashboards, RAID reporting, sponsor updates, governance health indicators and a Plan-on-a-Page roadmap.",
-      link: "/downloads/programme-status-report-executive-governance-pack-v1.0.pptx",
+      link: "/downloads/enterprise-raid-governance-dashboard-v1.0.xlsx",
       status: "Available",
     },
     {
@@ -110,7 +110,7 @@ export default function ResourcesPreview() {
                     download
                     className="inline-flex rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
                   >
-                    Download Template
+                    Download Pack
                   </a>
                 ) : (
                   <span className="text-sm font-semibold text-cyan-300">
