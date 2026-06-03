@@ -34,10 +34,6 @@ export default function Hero() {
             transition={{ duration: 0.7 }}
             className="max-w-4xl"
           >
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
-              Transformation Leadership · Agile Delivery · AI Governance
-            </p>
-
             <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">
               Transforming Delivery.
               <br />
@@ -60,30 +56,6 @@ export default function Hero() {
               strengthen governance, accelerate Agile adoption and realise the
               value of AI at scale.
             </p>
-
-            <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4">
-              <div>
-                <p className="text-3xl font-bold text-cyan-300">10+</p>
-                <p className="text-sm text-slate-400">Years Experience</p>
-              </div>
-
-              <div>
-                <p className="text-3xl font-bold text-cyan-300">FTSE</p>
-                <p className="text-sm text-slate-400">Enterprise Clients</p>
-              </div>
-
-              <div>
-                <p className="text-3xl font-bold text-cyan-300">Agile</p>
-                <p className="text-sm text-slate-400">
-                  Transformation Specialist
-                </p>
-              </div>
-
-              <div>
-                <p className="text-3xl font-bold text-cyan-300">AI</p>
-                <p className="text-sm text-slate-400">Governance & Adoption</p>
-              </div>
-            </div>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
