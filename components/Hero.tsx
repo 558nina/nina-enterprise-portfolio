@@ -13,6 +13,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#07111F] via-[#07111F]/95 to-[#07111F]/30" />
 
         <div className="absolute right-0 top-0 h-full w-full lg:w-1/2">
+          <div className="absolute inset-0 bg-cyan-400/10 blur-3xl" />
+
           <Image
             src="/images/nina-headshot.png"
             alt="Nina Hesse"
@@ -20,6 +22,7 @@ export default function Hero() {
             priority
             className="object-cover object-center opacity-65"
           />
+
           <div className="absolute inset-0 bg-gradient-to-r from-[#07111F] via-[#07111F]/50 to-[#07111F]/10" />
           <div className="absolute inset-0 bg-[#07111F]/25" />
         </div>
@@ -43,9 +46,14 @@ export default function Hero() {
               Enabling AI.
             </h1>
 
-            <h2 className="mt-6 text-2xl font-semibold text-cyan-300 md:text-3xl">
-              Nina Hesse | Transformation Consultant & Agile Delivery Lead
+            <h2 className="mt-8 text-4xl font-bold text-cyan-300">
+              Nina Hesse
             </h2>
+
+            <p className="mt-2 text-xl text-slate-300">
+              Transformation Consultant • Agile Delivery Lead • AI Governance
+              Specialist
+            </p>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
               Helping organisations deliver complex transformation programmes,
@@ -53,7 +61,31 @@ export default function Hero() {
               value of AI at scale.
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4">
+              <div>
+                <p className="text-3xl font-bold text-cyan-300">20+</p>
+                <p className="text-sm text-slate-400">Years Experience</p>
+              </div>
+
+              <div>
+                <p className="text-3xl font-bold text-cyan-300">FTSE</p>
+                <p className="text-sm text-slate-400">Enterprise Clients</p>
+              </div>
+
+              <div>
+                <p className="text-3xl font-bold text-cyan-300">Agile</p>
+                <p className="text-sm text-slate-400">
+                  Transformation Specialist
+                </p>
+              </div>
+
+              <div>
+                <p className="text-3xl font-bold text-cyan-300">AI</p>
+                <p className="text-sm text-slate-400">Governance & Adoption</p>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#services"
                 className="rounded-lg bg-cyan-400 px-8 py-4 text-sm font-bold text-slate-950 transition hover:bg-cyan-300"
