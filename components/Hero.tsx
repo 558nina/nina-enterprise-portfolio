@@ -70,14 +70,6 @@ export default function Hero() {
             >
               Let&apos;s Talk
             </a>
-
-            <a
-              href="/Nina-Hesse-CV.pdf"
-              download
-              className="rounded-lg border border-white/15 px-8 py-4 text-sm font-bold text-white transition hover:border-cyan-300 hover:text-cyan-300"
-            >
-              Download CV
-            </a>
           </div>
         </motion.div>
       </div>

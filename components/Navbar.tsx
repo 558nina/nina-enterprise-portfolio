@@ -26,18 +26,14 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-6 text-sm font-medium text-slate-300 lg:flex">
           {links.map((link) => (
-            <a key={link.label} href={link.href} className="hover:text-cyan-300">
+            <a
+              key={link.label}
+              href={link.href}
+              className="hover:text-cyan-300"
+            >
               {link.label}
             </a>
           ))}
-
-          <a
-            href="/Nina-Hesse-CV.pdf"
-            download
-            className="rounded-full bg-cyan-400 px-4 py-2 text-slate-950 hover:bg-cyan-300"
-          >
-            Download CV
-          </a>
         </div>
 
         <button
@@ -61,14 +57,6 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-
-            <a
-              href="/Nina-Hesse-CV.docx"
-              download
-              className="rounded-full bg-cyan-400 px-4 py-2 text-center font-semibold text-slate-950"
-            >
-              Download CV
-            </a>
           </div>
         </div>
       )}
