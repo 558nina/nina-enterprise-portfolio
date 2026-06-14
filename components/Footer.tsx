@@ -13,23 +13,33 @@ export default function Footer() {
           <a href="#experience" className="hover:text-cyan-300">
             Experience
           </a>
+
           <a href="#technical" className="hover:text-cyan-300">
             Technical Proof
           </a>
+
           <a href="#services" className="hover:text-cyan-300">
             Services
           </a>
+
           <a href="#" className="hover:text-cyan-300">
             LinkedIn
           </a>
-          <a href="https://github.com/558nina" className="hover:text-cyan-300">
+
+          <a
+            href="https://github.com/558nina"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-300"
+          >
             GitHub
           </a>
-          <a href="mailto:hesse.nina@yahoo.co.uk" className="hover:text-cyan-300">
+
+          <a
+            href="mailto:hesse.nina@yahoo.co.uk"
+            className="hover:text-cyan-300"
+          >
             Email
-          </a>
-          <a href="/Nina-Hesse-CV.pdf" download className="hover:text-cyan-300">
-            Download CV
           </a>
         </div>
       </div>
