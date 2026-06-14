@@ -4,9 +4,18 @@ import { products } from "@/lib/products";
 import path from "path";
 import { readFile } from "fs/promises";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
 export async function GET(request: Request) {
+  const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
+
+  if (!stripeSecretKey) {
+    return NextResponse.json(
+      { error: "Stripe secret key is missing" },
+      { status: 500 }
+    );
+  }
+
+  const stripe = new Stripe(stripeSecretKey);
+
   const { searchParams } = new URL(request.url);
   const sessionId = searchParams.get("session_id");
 
@@ -17,7 +26,10 @@ export async function GET(request: Request) {
   const session = await stripe.checkout.sessions.retrieve(sessionId);
 
   if (session.payment_status !== "paid") {
-    return NextResponse.json({ error: "Payment not verified" }, { status: 403 });
+    return NextResponse.json(
+      { error: "Payment not verified" },
+      { status: 403 }
+    );
   }
 
   const productId = session.metadata?.productId;
@@ -30,7 +42,12 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Product not found" }, { status: 404 });
   }
 
-  const filePath = path.join(process.cwd(), "private-downloads", product.fileName);
+  const filePath = path.join(
+    process.cwd(),
+    "private-downloads",
+    product.fileName
+  );
+
   const fileBuffer = await readFile(filePath);
 
   return new NextResponse(fileBuffer, {
