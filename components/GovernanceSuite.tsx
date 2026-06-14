@@ -1,4 +1,39 @@
+"use client";
+
+import { products } from "@/lib/products";
+
 export default function GovernanceSuite() {
+  const steeringPack = products.find(
+    (product) => product.id === "steering-committee-pack"
+  );
+
+  const raidDashboard = products.find(
+    (product) => product.id === "raid-dashboard"
+  );
+
+  const handleCheckout = async (productId: string) => {
+    try {
+      const response = await fetch("/api/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ productId }),
+      });
+
+      const data = await response.json();
+
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert("Unable to start checkout. Please try again.");
+      }
+    } catch (error) {
+      console.error("Checkout error:", error);
+      alert("Unable to start checkout. Please try again.");
+    }
+  };
+
   return (
     <section
       id="governance-suite"
@@ -50,13 +85,19 @@ export default function GovernanceSuite() {
                 programme roadmaps and decision tracking.
               </p>
 
-              <a
-                href="/downloads/Steering-Committee-Reporting-Pack-v1.0.pptx"
-                download
+              {steeringPack?.price && (
+                <p className="mt-4 text-lg font-bold text-cyan-300">
+                  {steeringPack.price}
+                </p>
+              )}
+
+              <button
+                type="button"
+                onClick={() => handleCheckout("steering-committee-pack")}
                 className="mt-8 inline-flex rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
               >
-                Download Pack
-              </a>
+                Buy Pack
+              </button>
             </div>
           </div>
 
@@ -88,13 +129,19 @@ export default function GovernanceSuite() {
                 executive reporting and stakeholder controls.
               </p>
 
-              <a
-                href="/downloads/enterprise-raid-governance-dashboard-v1.0.xlsx"
-                download
+              {raidDashboard?.price && (
+                <p className="mt-4 text-lg font-bold text-cyan-300">
+                  {raidDashboard.price}
+                </p>
+              )}
+
+              <button
+                type="button"
+                onClick={() => handleCheckout("raid-dashboard")}
                 className="mt-8 inline-flex rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
               >
-                Download Dashboard
-              </a>
+                Buy Dashboard
+              </button>
             </div>
           </div>
         </div>
