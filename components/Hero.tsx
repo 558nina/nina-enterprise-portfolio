@@ -33,10 +33,6 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="max-w-4xl"
         >
-          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
-            Arcvale Consulting
-          </p>
-
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">
             Enterprise Transformation.
             <br />
@@ -45,20 +41,17 @@ export default function Hero() {
             AI Governance.
           </h1>
 
-          <h2 className="mt-8 text-3xl font-bold text-cyan-300 md:text-4xl">
-            Helping organisations deliver complex transformation with
-            confidence.
+          <h2 className="mt-8 max-w-3xl text-3xl font-bold leading-tight text-cyan-300 md:text-4xl">
+            Helping organisations deliver complex change with confidence.
           </h2>
 
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
-            Arcvale Consulting supports organisations with Agile delivery
-            leadership, programme governance, cloud transformation, responsible
-            AI adoption and practical delivery enablement.
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+            Practical consulting support across governance, Agile delivery,
+            cloud transformation and responsible AI adoption.
           </p>
 
           <p className="mt-4 text-base text-slate-400">
-            Founded by Nina Hesse, Transformation Consultant, Agile Delivery Lead
-            and AI Governance Specialist.
+            Founded by Nina Hesse.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
