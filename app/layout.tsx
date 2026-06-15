@@ -13,12 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Arcvale Consulting",
+  metadataBase: new URL("https://arcvaleconsulting.com"),
+
+  title: {
+    default: "Arcvale Consulting",
+    template: "%s | Arcvale Consulting",
+  },
 
   description:
-    "Arcvale Consulting helps organisations deliver complex transformation programmes through Agile delivery leadership, programme governance, cloud transformation and responsible AI adoption.",
+    "Arcvale Consulting helps organisations deliver complex transformation through Agile delivery leadership, programme governance, cloud transformation and responsible AI adoption.",
 
   keywords: [
+    "Arcvale Consulting",
     "Enterprise Transformation",
     "Agile Delivery",
     "Programme Governance",
@@ -34,10 +40,12 @@ export const metadata: Metadata = {
   ],
 
   authors: [{ name: "Nina Hesse" }],
-
   creator: "Arcvale Consulting",
-
   publisher: "Arcvale Consulting",
+
+  alternates: {
+    canonical: "/",
+  },
 
   openGraph: {
     title:
@@ -46,11 +54,22 @@ export const metadata: Metadata = {
     description:
       "Helping organisations deliver complex transformation with confidence.",
 
+    url: "https://arcvaleconsulting.com",
+
     siteName: "Arcvale Consulting",
 
     locale: "en_GB",
 
     type: "website",
+
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Arcvale Consulting",
+      },
+    ],
   },
 
   twitter: {
@@ -61,6 +80,8 @@ export const metadata: Metadata = {
 
     description:
       "Helping organisations deliver complex transformation with confidence.",
+
+    images: ["/opengraph-image.png"],
   },
 };
 
@@ -74,7 +95,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+      </body>
     </html>
   );
 }
