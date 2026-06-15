@@ -47,6 +47,10 @@ export default function Footer() {
             Terms & Conditions
           </a>
 
+          <a href="/privacy" className="hover:text-cyan-300">
+            Privacy Policy
+          </a>
+
           <a href="#" className="hover:text-cyan-300">
             LinkedIn
           </a>
