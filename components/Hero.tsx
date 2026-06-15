@@ -16,7 +16,7 @@ export default function Hero() {
 
         <Image
           src="/images/nina-headshot.png"
-          alt="Nina Hesse"
+          alt="Nina Hesse, Founder of Arcvale Consulting"
           fill
           priority
           className="object-cover object-top opacity-65"
@@ -33,27 +33,32 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="max-w-4xl"
         >
-          <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">
-            Transforming Delivery.
-            <br />
-            Accelerating Change.
-            <br />
-            Enabling AI.
-          </h1>
-
-          <h2 className="mt-8 text-4xl font-bold text-cyan-300">
-            Nina Hesse
-          </h2>
-
-          <p className="mt-2 text-xl text-slate-300">
-            Transformation Consultant • Agile Delivery Lead • AI Governance
-            Specialist
+          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
+            Arcvale Consulting
           </p>
 
+          <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">
+            Enterprise Transformation.
+            <br />
+            Delivery Excellence.
+            <br />
+            AI Governance.
+          </h1>
+
+          <h2 className="mt-8 text-3xl font-bold text-cyan-300 md:text-4xl">
+            Helping organisations deliver complex transformation with
+            confidence.
+          </h2>
+
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
-            Helping organisations deliver complex transformation programmes,
-            strengthen governance, accelerate Agile adoption and realise the
-            value of AI at scale.
+            Arcvale Consulting supports organisations with Agile delivery
+            leadership, programme governance, cloud transformation, responsible
+            AI adoption and practical delivery enablement.
+          </p>
+
+          <p className="mt-4 text-base text-slate-400">
+            Founded by Nina Hesse, Transformation Consultant, Agile Delivery Lead
+            and AI Governance Specialist.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
