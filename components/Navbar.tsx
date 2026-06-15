@@ -7,8 +7,9 @@ export default function Navbar() {
 
   const links = [
     { label: "Experience", href: "#experience" },
-    { label: "Technical", href: "#technical" },
     { label: "Services", href: "#services" },
+    { label: "Learning Hub", href: "#learning" },
+    { label: "Resources", href: "#resources" },
     { label: "Contact", href: "#contact" },
     { label: "LinkedIn", href: "#" },
     { label: "GitHub", href: "https://github.com/558nina" },
@@ -18,9 +19,12 @@ export default function Navbar() {
     <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 px-6 py-4 text-white backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <a href="#" className="leading-tight">
-          <span className="block text-lg font-bold">Nina Hesse</span>
+          <span className="block text-lg font-bold">
+            Arcvale Consulting
+          </span>
+
           <span className="hidden text-xs text-slate-400 sm:block">
-            Agile Delivery & Transformation
+            Enterprise Transformation • Delivery Excellence • AI Governance
           </span>
         </a>
 
@@ -29,7 +33,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="hover:text-cyan-300"
+              className="hover:text-cyan-300 transition-colors"
             >
               {link.label}
             </a>
