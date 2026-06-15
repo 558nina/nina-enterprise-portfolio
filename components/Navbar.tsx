@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -18,14 +19,25 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 px-6 py-4 text-white backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
-        <a href="#" className="leading-tight">
-          <span className="block text-lg font-bold">
-            Arcvale Consulting
-          </span>
+        <a href="#" className="flex items-center gap-3">
+          <Image
+            src="/images/arcvale-icon.png"
+            alt="Arcvale Consulting logo"
+            width={42}
+            height={42}
+            priority
+            className="rounded-xl"
+          />
 
-          <span className="hidden text-xs text-slate-400 sm:block">
-            Enterprise Transformation • Delivery Excellence • AI Governance
-          </span>
+          <div className="leading-tight">
+            <span className="block text-lg font-bold">
+              Arcvale Consulting
+            </span>
+
+            <span className="hidden text-xs text-slate-400 sm:block">
+              Enterprise Transformation • Delivery Excellence • AI Governance
+            </span>
+          </div>
         </a>
 
         <div className="hidden items-center gap-6 text-sm font-medium text-slate-300 lg:flex">
@@ -33,7 +45,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="hover:text-cyan-300 transition-colors"
+              className="transition-colors hover:text-cyan-300"
             >
               {link.label}
             </a>
