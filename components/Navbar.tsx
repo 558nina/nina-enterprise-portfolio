@@ -17,16 +17,16 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 px-6 py-3 text-white backdrop-blur-sm">
+    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 px-6 py-2 text-white backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <a href="#" className="flex items-center">
           <Image
             src="/images/arcvale-horizontal-logo-transparent.png"
             alt="Arcvale Consulting"
-            width={1000}
-            height={250}
+            width={900}
+            height={225}
             priority
-            className="h-auto max-h-28 w-auto"
+            className="h-auto max-h-20 w-auto"
           />
         </a>
 
