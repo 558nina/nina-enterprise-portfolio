@@ -17,7 +17,7 @@ export const products: Product[] = [
     description:
       "A structured framework to evaluate organisational readiness for AI adoption across people, process and technology.",
     price: "£29",
-    priceId: "price_1The1TRu1qmiSoxfNhyh4WOf",
+    priceId: "price_1TicVURu1qmiSoxfv1zoOwIV",
     fileName: "AI_Readiness_Assessment V1.xlsx",
     status: "Available",
   },
@@ -29,7 +29,7 @@ export const products: Product[] = [
     description:
       "PMO-ready RAID management and governance dashboard featuring Governance Exposure scoring, programme health indicators, executive reporting and stakeholder controls.",
     price: "£39",
-    priceId: "price_1Ti4woRu1qmiSoxfZJWY223K",
+    priceId: "price_1TicTqRu1qmiSoxfjMElZXnf",
     fileName: "Enterprise-RAID-Governance-Dashboard-v1.0.xlsx",
     status: "Available",
   },
@@ -41,7 +41,7 @@ export const products: Product[] = [
     description:
       "A premium executive governance reporting framework featuring executive dashboards, governance reporting, financial oversight, programme roadmaps and decision tracking.",
     price: "£49",
-    priceId: "price_1Ti4xwRu1qmiSoxfUQpaywYH",
+    priceId: "price_1TicO7Ru1qmiSoxfm5PZbGMa",
     fileName: "Steering-Committee-Reporting-Pack-v1.0.pptx",
     status: "Available",
   },
