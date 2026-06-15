@@ -43,6 +43,10 @@ export default function Footer() {
             Contact
           </a>
 
+          <a href="/terms" className="hover:text-cyan-300">
+            Terms & Conditions
+          </a>
+
           <a href="#" className="hover:text-cyan-300">
             LinkedIn
           </a>
