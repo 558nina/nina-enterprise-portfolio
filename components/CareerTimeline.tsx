@@ -5,7 +5,6 @@ import PremiumCard from "./PremiumCard";
 
 const journey = [
   {
-    year: "2024",
     company: "London Stock Exchange Group",
     badge: "LSEG",
     role: "Scrum Master / Agile Delivery Lead",
@@ -24,7 +23,6 @@ const journey = [
     tags: ["DevOps", "Governance", "Forecasting", "CI/CD"],
   },
   {
-    year: "2022",
     company: "Legal & General",
     badge: "L&G",
     role: "Digital Scrum Master",
@@ -43,7 +41,6 @@ const journey = [
     tags: ["Agile", "Planning", "Forecasting", "Transformation"],
   },
   {
-    year: "2020",
     company: "Capgemini",
     badge: "CAP",
     role: "Engagement Manager",
@@ -66,7 +63,6 @@ const journey = [
     tags: ["Cloud", "IAM", "DevSecOps", "Consulting"],
   },
   {
-    year: "2018",
     company: "Marks & Spencer",
     badge: "M&S",
     role: "Project Manager",
@@ -102,7 +98,7 @@ export default function CareerTimeline() {
       <div className="relative mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-cyan-300">
-            Career Journey
+            Selected Engagements
           </p>
 
           <h2 className="text-4xl font-bold md:text-5xl">
@@ -110,9 +106,8 @@ export default function CareerTimeline() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-400">
-            A consulting-led progression across Agile delivery, programme
-            governance, cloud transformation, DevOps and enterprise technology
-            leadership.
+            A consulting-led portfolio of Agile delivery, programme governance,
+            cloud transformation, DevOps and enterprise technology leadership.
           </p>
         </div>
 
@@ -150,9 +145,6 @@ export default function CareerTimeline() {
                       }`}
                     >
                       <div className="flex flex-wrap items-center gap-3">
-                        <span className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-3 py-1 text-xs font-semibold text-cyan-300">
-                          {item.year}
-                        </span>
                         <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300">
                           {item.focus}
                         </span>
@@ -176,9 +168,6 @@ export default function CareerTimeline() {
             <div className="flex flex-col gap-5 border-b border-white/10 pb-6 lg:flex-row lg:items-start lg:justify-between">
               <div>
                 <div className="flex flex-wrap items-center gap-3">
-                  <span className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-3 py-1 text-xs font-semibold text-cyan-300">
-                    {activeItem.year}
-                  </span>
                   <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300">
                     {activeItem.focus}
                   </span>
