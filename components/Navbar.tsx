@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <a href="#" className="flex items-center">
           <Image
-            src="/images/arcvale-horizontal-logo.png"
+            src="/images/arcvale-horizontal-logo-transparent.png"
             alt="Arcvale Consulting"
             width={550}
             height={138}
