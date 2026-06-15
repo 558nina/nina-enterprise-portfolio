@@ -19,28 +19,18 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 px-6 py-4 text-white backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
+        <a href="#" className="flex items-center">
           <Image
-            src="/images/arcvale-icon.png"
-            alt="Arcvale Consulting logo"
-            width={42}
-            height={42}
+            src="/images/arcvale-horizontal-logo.png"
+            alt="Arcvale Consulting"
+            width={360}
+            height={90}
             priority
-            className="rounded-xl"
+            className="h-auto max-h-14 w-auto"
           />
-
-          <div className="leading-tight">
-            <span className="block text-lg font-bold">
-              Arcvale Consulting
-            </span>
-
-            <span className="hidden text-xs text-slate-400 sm:block">
-              Enterprise Transformation • Delivery Excellence • AI Governance
-            </span>
-          </div>
         </a>
 
-        <div className="hidden items-center gap-6 text-sm font-medium text-slate-300 lg:flex">
+        <div className="hidden items-center gap-5 text-sm font-medium text-slate-300 lg:flex">
           {links.map((link) => (
             <a
               key={link.label}
