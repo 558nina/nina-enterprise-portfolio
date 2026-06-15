@@ -23,10 +23,10 @@ export default function Navbar() {
           <Image
             src="/images/arcvale-horizontal-logo-transparent.png"
             alt="Arcvale Consulting"
-            width={850}
-            height={213}
+            width={1000}
+            height={250}
             priority
-            className="h-auto max-h-24 w-auto"
+            className="h-auto max-h-28 w-auto"
           />
         </a>
 
