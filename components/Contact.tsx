@@ -27,15 +27,22 @@ export default function Contact() {
               </p>
 
               <p className="mt-3 text-sm leading-6 text-slate-400">
-                Send a short note about what you need support with and I’ll
-                respond with the most suitable next step.
+                Send a short note to{" "}
+                <a
+                  href="mailto:info@arcvaleconsulting.com"
+                  className="text-cyan-300 hover:text-cyan-200"
+                >
+                  info@arcvaleconsulting.com
+                </a>{" "}
+                about what you need support with and I'll respond with the most
+                suitable next step.
               </p>
 
               <a
-                href="mailto:hesse.nina@yahoo.co.uk"
+                href="mailto:info@arcvaleconsulting.com"
                 className="mt-6 inline-flex w-full justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
               >
-                Email Nina
+                Start the Conversation
               </a>
 
               <p className="mt-4 text-center text-xs text-slate-500">
