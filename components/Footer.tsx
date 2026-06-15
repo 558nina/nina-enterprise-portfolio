@@ -8,8 +8,8 @@ export default function Footer() {
           <Image
             src="/images/arcvale-brand-mark.png"
             alt="Arcvale Consulting"
-            width={180}
-            height={180}
+            width={120}
+            height={120}
             className="h-auto w-auto"
           />
 
