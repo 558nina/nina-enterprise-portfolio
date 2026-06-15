@@ -1,11 +1,19 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#070B14] px-6 py-10 text-white">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="text-lg font-bold">Arcvale Consulting</p>
+          <Image
+            src="/images/arcvale-brand-mark.png"
+            alt="Arcvale Consulting"
+            width={180}
+            height={180}
+            className="h-auto w-auto"
+          />
 
-          <p className="mt-2 text-sm text-slate-400">
+          <p className="mt-4 text-sm text-slate-400">
             Enterprise Transformation • Delivery Excellence • AI Governance
           </p>
 
