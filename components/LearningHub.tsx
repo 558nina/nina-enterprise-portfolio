@@ -52,7 +52,7 @@ export default function LearningHub() {
 
   return (
     <section
-      id="learning-hub"
+      id="learning"
       className="bg-slate-950 px-6 py-24 text-white"
     >
       <div className="mx-auto max-w-7xl">
