@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#070B14] px-6 py-6 text-white">
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div>
           <Image
             src="/images/arcvale-brand-mark.png"
@@ -31,10 +31,6 @@ export default function Footer() {
             Services
           </a>
 
-          <a href="#learning" className="hover:text-cyan-300">
-            Learning Hub
-          </a>
-
           <a href="#resources" className="hover:text-cyan-300">
             Resources
           </a>
@@ -43,16 +39,11 @@ export default function Footer() {
             Contact
           </a>
 
-          <a href="/terms" className="hover:text-cyan-300">
-            Terms & Conditions
-          </a>
-
-          <a href="/privacy" className="hover:text-cyan-300">
-            Privacy Policy
-          </a>
-
-          <a href="#" className="hover:text-cyan-300">
-            LinkedIn
+          <a
+            href="mailto:info@arcvaleconsulting.com"
+            className="hover:text-cyan-300"
+          >
+            Email
           </a>
 
           <a
@@ -67,7 +58,19 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-4 max-w-7xl border-t border-white/5 pt-4 text-xs text-slate-500">
-        © 2026 Arcvale Consulting. All rights reserved.
+        <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+          <p>© 2026 Arcvale Consulting. All rights reserved.</p>
+
+          <div className="flex gap-4">
+            <a href="/terms" className="hover:text-cyan-300">
+              Terms & Conditions
+            </a>
+
+            <a href="/privacy" className="hover:text-cyan-300">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
