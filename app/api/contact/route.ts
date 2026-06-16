@@ -26,7 +26,6 @@ export async function POST(request: Request) {
     const { data, error } = await resend.emails.send({
       from: "Arcvale Website <info@arcvaleconsulting.com>",
       to: "info@arcvaleconsulting.com",
-      bcc: ["hesse.nina@yahoo.co.uk"],
       subject: `New enquiry from ${name}`,
       replyTo: email,
       html: `
