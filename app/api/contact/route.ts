@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: "Arcvale Website <hello@arcvaleconsulting.com>",
+      from: "Website Enquiries <onboarding@resend.dev>",
       to: "info@arcvaleconsulting.com",
       subject: `New enquiry from ${name}`,
       replyTo: email,
