@@ -24,8 +24,9 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: "Website Enquiries <onboarding@resend.dev>",
+      from: "Arcvale Website <hello@arcvaleconsulting.com>",
       to: "info@arcvaleconsulting.com",
+      bcc: ["hesse.nina@yahoo.co.uk"],
       subject: `New enquiry from ${name}`,
       replyTo: email,
       html: `
@@ -51,7 +52,10 @@ export async function POST(request: Request) {
       );
     }
 
-    return NextResponse.json({ success: true, id: data?.id });
+    return NextResponse.json({
+      success: true,
+      id: data?.id,
+    });
   } catch (error) {
     console.error("Contact form error:", error);
 
